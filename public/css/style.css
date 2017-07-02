@@ -1,0 +1,136 @@
+/* Space out content a bit */
+body {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #adebad;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Custom page footer */
+.footer {
+  text-align: center;
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+.page-header{
+  margin-top:1;
+  font-weight: bold;
+}
+
+footer{
+  margin-top:40px;
+}
+
+.blogheader{
+  text-align: center;
+  margin:auto;
+  display: block;
+  height: 150px;
+}
+
+.clr{
+  clear: both;
+}
+
+.meta{
+  padding:2px;
+  border:1px solid #e0ebeb;
+  background: #e0ebeb;
+}
+
+.post{
+  border-bottom:1px solid #ccc;
+  padding: 15px 10px;
+}
+
+.comment{
+  background: #c2d6d6;
+  padding:5px;
+  border:#666 solid 1px;
+  margin:15px 0 20px;
+}
+
+.comment-name{
+  font-weight: bold;
+}
+
+.comment-form{
+  margin:30px 0;
+}
+
+.blogmenu{
+  border-radius: 5px;
+  background: #adebad;
+  font-size: 16px;
+  font-weight: bold;
+}

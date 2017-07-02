@@ -1,0 +1,20 @@
+<div class="blogmenu">
+<ul class="nav nav-pills">
+<li><a href="/users/blog">Home</a></li>
+<li><a href="/posts/add">Add Post</a></li>
+<li><a href="/categories/add">Add Categories</a></li>
+</ul>
+</div>
+{{#if posts}}
+    {{#each posts}}
+    <div class="post">
+  		<h4><a href="/posts/show/{{_id}}">{{title}}</a></h4>
+  		<p class="meta">Posted in <a href="/categories/show/{{category}}">{{category}}</a> by {{author}} on {{date}}</p>
+  		<center><img src="/images/uploads/{{mainimage}}" style="height:200px; width:500px;"></center>
+  		{{body}}<a href="/posts/show/{{_id}}">&nbsp;&nbsp;Read More</a></p>
+  	</div>
+	{{/each}}
+{{else}}
+		<h3>There are no posts.</h3>
+{{/if}}
+
